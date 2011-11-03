@@ -1,3 +1,9 @@
+# revision 23167
+# category ConTeXt
+# catalog-ctan /macros/context/contrib/context-bnf
+# catalog-date 2008-08-18 23:54:09 +0200
+# catalog-license gpl
+# catalog-version undef
 Name:		texlive-context-bnf
 Version:	20080818
 Release:	1
@@ -50,6 +56,7 @@ looking at the source ConTeXt document.
 %doc %{_texmfdistdir}/doc/context/third/bnf/NEWS
 %doc %{_texmfdistdir}/doc/context/third/bnf/README
 %doc %{_texmfdistdir}/doc/context/third/bnf/t-bnf.pdf
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -60,3 +67,5 @@ looking at the source ConTeXt document.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
