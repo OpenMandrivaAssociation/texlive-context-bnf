@@ -15,11 +15,11 @@ Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/context-bnf.tar.x
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/context-bnf.doc.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
-Requires(post):	texlive-tlpkg
-Requires:	texlive-context
+Requires(pre):	texlive-tlpkg
+Requires(post):	texlive-kpathsea
+Requires(post):	texlive-context
 Conflicts:	texlive-texmf <= 20110705-3
 Conflicts:	texlive-doc <= 20110705-3
-Requires(post):	texlive-context.bin
 
 %description
 The module provides a simple way to write good-looking BNF-
@@ -35,8 +35,8 @@ looking at the source ConTeXt document.
     %_texmf_mktexlsr_pre
 
 %post
-    %_texmf_mtxrun_post
     %_texmf_mktexlsr_post
+    %_texmf_mtxrun_post
 
 %preun
     if [ $1 -eq 0 ]; then
@@ -46,8 +46,8 @@ looking at the source ConTeXt document.
 
 %postun
     if [ $1 -eq 0 ]; then
-	%_texmf_mtxrun_post
 	%_texmf_mktexlsr_post
+	%_texmf_mtxrun_post
     fi
 
 #-----------------------------------------------------------------------
