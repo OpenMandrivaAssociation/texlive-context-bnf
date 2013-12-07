@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-context-bnf
 Version:	20080818
-Release:	4
+Release:	5
 Summary:	A BNF module for Context
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/context/contrib/context-bnf
