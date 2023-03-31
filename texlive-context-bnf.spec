@@ -1,6 +1,6 @@
 Name:		texlive-context-bnf
 Version:	47085
-Release:	1
+Release:	2
 Summary:	A BNF module for Context
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/context/contrib/context-bnf
