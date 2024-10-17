@@ -3,7 +3,7 @@ Version:	47085
 Release:	2
 Summary:	A BNF module for Context
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/context/contrib/context-bnf
+URL:		https://www.ctan.org/tex-archive/macros/context/contrib/context-bnf
 License:	GPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/context-bnf.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/context-bnf.doc.r%{version}.tar.xz
